@@ -3,8 +3,10 @@ language: php
 php:
   - 5.6
   - 7.0
+  - 7.1
 
 before_script:
-  - wget http://getcomposer.org/composer.phar
-  - php composer.phar install
-  - ./vendor/bin/phpunit
+  - travis_retry composer self-update
+- travis_retry composer install --prefer-dist --no-interaction --dev
+
+script: ./vendor/bin/phpunit -c phpunit.xml
