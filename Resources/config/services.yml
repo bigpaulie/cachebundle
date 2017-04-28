@@ -1,4 +1,11 @@
 services:
-#    bigpaulie_cache.example:
-#        class: bigpaulie\CacheBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    memcached:
+        class: Memcached
+        calls:
+            - [addServers, ["%memcached_servers%"]]
+
+    doctrine.cache.driver.memcached:
+        class: bigpaulie\CacheBundle\Drivers\Memcached
+        calls:
+            - [addMemcachd, ["@memcached"]]
+            - [parseNamespace]
