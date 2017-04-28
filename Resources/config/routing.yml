@@ -1,0 +1,3 @@
+bigpaulie_cache_homepage:
+    path:     /
+    defaults: { _controller: BigpaulieCacheBundle:Default:index }
