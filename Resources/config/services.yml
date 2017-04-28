@@ -7,5 +7,5 @@ services:
     doctrine.cache.driver.memcached:
         class: bigpaulie\CacheBundle\Drivers\Memcached
         calls:
-            - [addMemcachd, ["@memcached"]]
+            - [setMemcached, ["@memcached"]]
             - [parseNamespace]

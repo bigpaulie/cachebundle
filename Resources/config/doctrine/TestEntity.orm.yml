@@ -1,0 +1,20 @@
+bigpaulie\CacheBundle\Entity\TestEntity:
+    type: entity
+    table: null
+    repositoryClass: bigpaulie\CacheBundle\Repository\TestEntityRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        firstName:
+            type: string
+            length: 255
+        lastName:
+            type: string
+            length: 255
+        age:
+            type: integer
+    lifecycleCallbacks: {  }
