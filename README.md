@@ -17,12 +17,12 @@ $bundles = array(
 ```
 
 Import the services.yml in your config.yml at the top of the file
-```
+```yml
 - { resource: "@BigpaulieCacheBundle/Resources/config/services.yml"}
 ```
 
 Add a new parameter in parameters.yml
-```
+```yml
 memcached_servers:
         - { host: 127.0.0.1, port: 11211 }
 ```
