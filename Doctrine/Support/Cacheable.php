@@ -12,7 +12,7 @@ trait Cacheable
     /**
      * Finds an Entity by its identifier.
      *
-     * @param $id
+     * @param int $id
      * @param int|null $lifetime
      * @param \Closure|null $callable
      * @return \Closure|object|null

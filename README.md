@@ -27,6 +27,21 @@ memcached_servers:
         - { host: 127.0.0.1, port: 11211 }
 ```
 
+Tell doctrine to use a given cache driver
+```yml
+doctrine:
+    orm:
+        metadata_cache_driver:
+            type: service
+            id: doctrine.cache.driver.memcached
+        query_cache_driver:
+            type: service
+            id: doctrine.cache.driver.memcached
+        result_cache_driver:
+            type: service
+            id: doctrine.cache.driver.memcached
+```
+
 ## Query Caching
 The bundle follows the official API as described in the documentation at [Doctrine Project](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/caching.html)
 #### DQL Caching

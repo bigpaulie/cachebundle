@@ -18,6 +18,8 @@ class Memcached extends MemcachedCache implements CacheDriver
      */
     public function parseNamespace()
     {
-        // TODO: Implement parseNamespace() method.
+        $server = ($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : '';
+        $namespace = str_replace('.', '_', $server);
+        $this->setNamespace($namespace);
     }
 }
