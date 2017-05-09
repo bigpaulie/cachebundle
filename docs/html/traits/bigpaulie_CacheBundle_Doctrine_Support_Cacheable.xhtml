@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - bigpaulie\CacheBundle\Doctrine\Support\Cacheable</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../traits.xhtml">Traits</a>
+          </li>
+          <li class="separator">
+            <a href="../traits.xhtml#bigpaulie_CacheBundle_Doctrine_Support">bigpaulie\CacheBundle\Doctrine\Support</a>
+          </li>
+          <li class="separator">Cacheable</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="#history">History</a>
+          </li>
+          <li>
+            <a href="../source/Doctrine/Support/Cacheable.php.xhtml#line9">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>bigpaulie\CacheBundle\Doctrine\Support\</small>Cacheable</h1>
+        <h4/>
+        <p/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">trait Cacheable
+            {<br/><ul class="none"><li>// methods</li><li>public Closure|object|null <a title="bigpaulie\CacheBundle\Doctrine\Support\Cacheable" href="../traits/bigpaulie_CacheBundle_Doctrine_Support_Cacheable/find.xhtml">find</a>()
+                    </li><li>public object|null <a title="bigpaulie\CacheBundle\Doctrine\Support\Cacheable" href="../traits/bigpaulie_CacheBundle_Doctrine_Support_Cacheable/findOneBy.xhtml">findOneBy</a>()
+                    </li><li>public mixed|null <a title="bigpaulie\CacheBundle\Doctrine\Support\Cacheable" href="../traits/bigpaulie_CacheBundle_Doctrine_Support_Cacheable/findAll.xhtml">findAll</a>()
+                    </li><li>protected string <a title="bigpaulie\CacheBundle\Doctrine\Support\Cacheable" href="../traits/bigpaulie_CacheBundle_Doctrine_Support_Cacheable/cacheId.xhtml">cacheId</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Used by</h4>
+          <ul>
+            <li>
+              <a title="bigpaulie\CacheBundle\Repository\TestEntityRepository" href="../classes/bigpaulie_CacheBundle_Repository_TestEntityRepository.xhtml">bigpaulie\CacheBundle\Repository\TestEntityRepository</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>protected</h4>
+          <ul>
+            <li id="cacheId"><a title="bigpaulie\CacheBundle\Doctrine\Support\Cacheable" href="../traits/bigpaulie_CacheBundle_Doctrine_Support_Cacheable/cacheId.xhtml">cacheId()</a>
+                — Generate a cache id from a predefined key and a unique salt.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="find"><a title="bigpaulie\CacheBundle\Doctrine\Support\Cacheable" href="../traits/bigpaulie_CacheBundle_Doctrine_Support_Cacheable/find.xhtml">find()</a>
+                — Finds an Entity by its identifier.</li>
+            <li id="findAll"><a title="bigpaulie\CacheBundle\Doctrine\Support\Cacheable" href="../traits/bigpaulie_CacheBundle_Doctrine_Support_Cacheable/findAll.xhtml">findAll()</a>
+                — Finds all entities in the repository.</li>
+            <li id="findOneBy"><a title="bigpaulie\CacheBundle\Doctrine\Support\Cacheable" href="../traits/bigpaulie_CacheBundle_Doctrine_Support_Cacheable/findOneBy.xhtml">findOneBy()</a>
+                — Finds a single entity by a set of criteria.</li>
+          </ul>
+        </div>
+        <h2 id="history">History</h2>
+        <ul class="styled history">
+          <li>
+            <h3>2017-05-02T12:12:18+00:00 (commit #<span title="e915eb1ab2a4c8d5e629ff3f62e6db676b33e09c">e915eb1</span>)</h3>
+            <div>
+              <p>
+                        Author: Paul P (bigpaulie25ro@yahoo.com) /
+                        Commiter: Paul P (bigpaulie25ro@yahoo.com)
+                    </p>
+              <pre class="wrapped">Adding NullObject class, minor refactoring</pre>
+            </div>
+          </li>
+          <li>
+            <h3>2017-04-28T19:31:49+00:00 (commit #<span title="7d208137f6515fda38419ac7cde7228a60b20094">7d20813</span>)</h3>
+            <div>
+              <p>
+                        Author: Paul P (bigpaulie25ro@yahoo.com) /
+                        Commiter: Paul P (bigpaulie25ro@yahoo.com)
+                    </p>
+              <pre class="wrapped">Adding Cacheabe trait, modifying README.md</pre>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.9.0 - Copyright (C) 2010 - 2017 by Arne Blankerts</span>
+    </footer>
+  </body>
+</html>
