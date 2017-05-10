@@ -18,8 +18,16 @@ class Memcached extends MemcachedCache implements CacheDriver
      */
     public function parseNamespace()
     {
-        $server = ($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : '';
-        $namespace = str_replace('.', '_', $server);
-        $this->setNamespace($namespace);
+        /**
+         * Check if the script is being called by the server of in cli
+         * if the caller is "cli" than there is no need to setup the namespace.
+         *
+         * Also if the caller is "cli" there is no $_SERVER['SERVER_NAME'] global.
+         */
+        if ( php_sapi_name() != PHP_SAPI ) {
+            $server = ($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : '';
+            $namespace = str_replace('.', '_', $server);
+            $this->setNamespace($namespace);
+        }
     }
 }
