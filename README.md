@@ -1,4 +1,4 @@
-# CacheBundle [![Build Status](https://travis-ci.org/bigpaulie/symfony-cachebundle.svg?branch=master)](https://travis-ci.org/bigpaulie/symfony-cachebundle)
+# CacheBundle [![Build Status](https://travis-ci.org/bigpaulie/cachebundle.svg?branch=master)](https://travis-ci.org/bigpaulie/cachebundle)
 This bundle provides some extra functionality to the cache layer by exposing a service and a trait in order to make it easier for you to cache your queries.
 
 At the moment this bundle works with Symfony 2.8.x PHP 5.6, PHP 7 and MySQL/MariaDB 
