@@ -27,6 +27,14 @@ memcached_servers:
         - { host: 127.0.0.1, port: 11211 }
 ```
 
+Enable/disable caching for specific environments
+
+Place the following in your config_*.yml file
+```yml
+    bigpaulie_cache:
+        enable: true|false
+```
+
 Tell doctrine to use a given cache driver
 ```yml
 doctrine:

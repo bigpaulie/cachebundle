@@ -3,7 +3,7 @@
 namespace bigpaulie\CacheBundle\Drivers;
 
 use bigpaulie\CacheBundle\Contracts\CacheDriver;
-use Doctrine\Common\Cache\MemcachedCache;
+use bigpaulie\CacheBundle\Doctrine\Common\Cache\MemcachedCache;
 
 /**
  * Class Memcached
