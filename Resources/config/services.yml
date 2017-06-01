@@ -9,3 +9,4 @@ services:
         calls:
             - [setMemcached, ["@memcached"]]
             - [parseNamespace]
+            - [setContainer, ["@service_container"]]

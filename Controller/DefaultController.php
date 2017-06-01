@@ -18,6 +18,9 @@ class DefaultController extends Controller
             return new NullObject();
         });
 
+        $container = $this->get('service_container');
+        var_dump($container->getParameter('bigpaulie_cache'));
+
         return $this->render('BigpaulieCacheBundle:Default:index.html.twig', [
             'cached' => $cached
         ]);
